@@ -18,25 +18,29 @@
         <entry file="file://$PROJECT_DIR$/DbHelper.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sendmyMail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sendmyMail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#p#2;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Core.php" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6486">
-              <caret line="282" column="9" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
+            <state relative-caret-position="182">
+              <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -87,8 +91,9 @@
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/dbtest.html" />
-        <option value="$PROJECT_DIR$/DbHelper.php" />
         <option value="$PROJECT_DIR$/manage.php" />
+        <option value="$PROJECT_DIR$/DbHelper.php" />
+        <option value="$PROJECT_DIR$/sendmyMail.php" />
       </list>
     </option>
   </component>
@@ -107,13 +112,14 @@
       <server host="localhost" id="b775e21d-9fa7-41f1-be99-17b663c838c3" name="php_debug_server" use_path_mappings="true">
         <path_mappings>
           <mapping local-root="$PROJECT_DIR$/manage.php" remote-root="D:/Apache24/htdocs/Php_WorkSpace/think5.1/manage.php" />
+          <mapping local-root="$PROJECT_DIR$/sendmyMail.php" remote-root="D:/Apache24/htdocs/Php_WorkSpace/think5.1/sendmyMail.php" />
         </path_mappings>
       </server>
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="localhost" port="80" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -147,15 +153,15 @@
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Apache24\htdocs\think5.1\application\index\view" />
-      <recent name="D:\Apache24\htdocs\think5.1\application\index\controller" />
-      <recent name="D:\Apache24\htdocs\think5.1\application\index\View\index" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Apache24\htdocs\think5.1" />
       <recent name="D:\Apache24\htdocs\think5.1\application\index\view\index" />
       <recent name="D:\Apache24\htdocs\think5.1\application\index" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Apache24\htdocs\think5.1\application\index\view" />
+      <recent name="D:\Apache24\htdocs\think5.1\application\index\controller" />
+      <recent name="D:\Apache24\htdocs\think5.1\application\index\View\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,12 +210,12 @@
       <workItem from="1525661223739" duration="6445000" />
       <workItem from="1525679241365" duration="6352000" />
       <workItem from="1525750358084" duration="729000" />
-      <workItem from="1525751621987" duration="7334000" />
+      <workItem from="1525751621987" duration="13014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27870000" />
+    <option name="totallyTimeSpent" value="33550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -225,8 +231,9 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20416667" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33186328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33186328" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,7 +241,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,22 +253,28 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/manage.php</url>
-          <line>45</line>
-          <option name="timeStamp" value="53" />
+          <url>file://$PROJECT_DIR$/sendmyMail.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/manage.php</url>
-          <line>51</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/sendmyMail.php</url>
+          <line>40</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="60" />
+      <option name="time" value="70" />
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="sendmyMail.php">
+        <watch expression="stripcslashes($_POST['subject'])" />
+        <watch expression="stripcslashes($_POST['message'])" />
+        <watch expression="$emai" />
+        <watch expression="$email" />
+      </configuration>
       <configuration name="manage.php">
         <watch expression="mysqli_num_rows($check_res)" />
       </configuration>
@@ -374,13 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6486">
-          <caret line="282" column="9" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -388,17 +393,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="282" column="9" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DbHelper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+        <state relative-caret-position="182">
+          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="1025" column="9" selection-start-line="1025" selection-start-column="9" selection-end-line="1025" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sendmyMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#p#2;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
