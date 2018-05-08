@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta charset="UTF-8"/>
+    <title>Subscribe/Unscubscribe to a Mailling List</title>
+</head>
+
+<body>
+<h1>Subscribe/Unscubscribe to a Mailling List</h1>
+<form method="post" action="$_SERVER[PHP_SERVER]">
+    <p><label for="email">Your E-Mail Address:</label></p><br/>
+    <input type="email" name="" id="email" value="email" size="40" maxlength="150"/>
+    <fieldset id="">
+        <legend>Action:</legend>
+        <br/>
+        <input type="radio" name="" id="action_sub" value="sub" name="action"/>
+        <label for="action_sub">subscribe</label><br/>
+        <input type="radio" name="" id="action_unsub" value="unsub"/>
+        <label for="action_unsub">unsubscribe</label>
+    </fieldset>
+    <button type="submit" name="submit" value="submit">Submit</button>
+</form>
+</body>
+
+</html>
