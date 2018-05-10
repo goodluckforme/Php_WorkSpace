@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>版主添加一个主题</title>
+	</head>
+
+	<body>
+		<h1>Add a Topic</h1>
+		<form method="post" action="do_addtopic.php">
+			<p><label for="topic_owner">Your Email Address:</label><br />
+				<input type="text" name="topic_owner" id="topic_owner" value="" size="40" maxlength="150" required="required" /></p>
+			<p><label for="topic_title">Topic Title:</label><br />
+				<input type="text" name="topic_title" id="topic_title" value="" size="40" maxlength="150" required="required" /></p>
+			<p><label for="post_text">Post Text</label><br />
+				<textarea name="post_text" id="post_text" rows="4" cols="40"></textarea>
+			</p>
+			<button type="submit" name="submit" value="submit">Add topic</button>
+		</form>
+	</body>
+
+</html>
