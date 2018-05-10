@@ -39,19 +39,19 @@ if (!$_POST) {
     $del_master_sql = "DELETE FROM master_name WHERE id = '" . $safe_id . "'";
     $del_master_res = mysqli_query($mysqli, $del_master_sql) or die(mysqli_error($mysqli));
     //删除地址
-    $del_address_sql = "DELETE FROM address WHERE id = '" . $safe_id . "'";
+    $del_address_sql = "DELETE FROM address WHERE master_id = '" . $safe_id . "'";
     $del_address_res = mysqli_query($mysqli, $del_address_sql) or die(mysqli_error($mysqli));
     //删除电话
-    $del_telephone_sql = "DELETE FROM telephone WHERE id = '" . $safe_id . "'";
+    $del_telephone_sql = "DELETE FROM telephone WHERE master_id = '" . $safe_id . "'";
     $del_telephone_res = mysqli_query($mysqli, $del_telephone_sql) or die(mysqli_error($mysqli));
     //删除邮件
-    $del_email_sql = "DELETE FROM email WHERE id = '" . $safe_id . "'";
+    $del_email_sql = "DELETE FROM email WHERE master_id = '" . $safe_id . "'";
     $del_email_res = mysqli_query($mysqli, $del_email_sql) or die(mysqli_error($mysqli));
     //删除传真
-    $del_fax_sql = "DELETE FROM fax WHERE id = '" . $safe_id . "'";
+    $del_fax_sql = "DELETE FROM fax WHERE master_id = '" . $safe_id . "'";
     $del_fax_res = mysqli_query($mysqli, $del_fax_sql) or die(mysqli_error($mysqli));
     //删除个人笔记
-    $del_note_sql = "DELETE FROM personal_notes WHERE id = '" . $safe_id . "'";
+    $del_note_sql = "DELETE FROM personal_notes WHERE master_id = '" . $safe_id . "'";
     $del_note_res = mysqli_query($mysqli, $del_note_sql) or die(mysqli_error($mysqli));
     $display_block = "<h1>Record(s) Deleted</h1>
 <p>Would you like to <a href=\"" . $SERVER['PHP_SELF'] . "\">Delete anohter</a>?</p>";
