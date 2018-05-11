@@ -10,7 +10,7 @@ include "DbHepler.php";
 
 doDB();
 if (!isset($_GET['topic_id'])) {
-    header("Location:showtopic_title.php");
+    header("Location:view_record.php");
     exit;
 }
 $safe_topic_id = mysqli_escape_string($mysqli, $_GET['topic_id']);
