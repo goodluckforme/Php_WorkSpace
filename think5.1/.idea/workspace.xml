@@ -31,11 +31,8 @@
       <file leaf-file-name="seestore.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Online_Shop/seestore.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="25" column="97" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="97" />
-              <folding>
-                <element signature="e#74#80#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="575">
+              <caret line="25" column="97" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -43,8 +40,8 @@
       <file leaf-file-name="showitem.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Online_Shop/showitem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="552">
+              <caret line="81" column="7" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="81" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -52,7 +49,7 @@
       <file leaf-file-name="selentry.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Online_Address_Book/selentry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="1380">
               <caret line="60" column="45" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="60" selection-end-column="45" />
             </state>
           </provider>
@@ -170,23 +167,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="think5.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="think5.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="think5.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="think5.1" type="462c0819:PsiDirectoryNode" />
-              <item name="Online_Address_Book" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="think5.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="think5.1" type="462c0819:PsiDirectoryNode" />
-              <item name="Online_Shop" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="think5.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
@@ -195,13 +179,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MuchTp5_try" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
@@ -271,11 +254,12 @@
       <workItem from="1525825909359" duration="23985000" />
       <workItem from="1525913768632" duration="22589000" />
       <workItem from="1525998977034" duration="19516000" />
+      <workItem from="1526260148549" duration="879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99640000" />
+    <option name="totallyTimeSpent" value="100519000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -288,19 +272,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20718816" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32992035" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3296582" />
+      <window_info anchor="bottom" id="Database" order="13" show_stripe_button="false" weight="0.3299356" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34015927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20718816" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database" order="13" show_stripe_button="false" weight="0.3299356" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.34015927" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28327644" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -310,6 +292,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,25 +660,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Online_Address_Book/selentry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="1380">
           <caret line="60" column="45" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="60" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Online_Shop/seestore.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="25" column="97" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="97" />
-          <folding>
-            <element signature="e#74#80#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="575">
+          <caret line="25" column="97" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Online_Shop/showitem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        <state relative-caret-position="552">
+          <caret line="81" column="7" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="81" selection-end-column="7" />
         </state>
       </provider>
     </entry>
