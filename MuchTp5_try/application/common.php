@@ -10,3 +10,14 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+function json($code,$msg="",$count,$data=array()){
+    $result=array(
+        'code'=>$code,
+        'msg'=>$msg,
+        'count'=>$count,
+        'data'=>$data
+    );
+    //输出json
+    echo json_encode($result);
+    exit;
+}
