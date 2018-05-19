@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:106:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\general\attachment\index.html";i:1525672326;s:86:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\layout\default.html";i:1525672326;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1525672326;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1525672326;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:97:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\user\user\index.html";i:1525672326;s:86:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\layout\default.html";i:1525672326;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1525672326;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1525672326;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,9 +58,19 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar(); ?>
+                        <?php echo build_toolbar('refresh,edit,del'); ?>
+                        <div class="dropdown btn-group <?php echo $auth->check('user/user/multi')?'':'hide'; ?>">
+                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+                    <table id="table" class="table table-striped table-bordered table-hover" 
+                           data-operate-edit="<?php echo $auth->check('user/user/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('user/user/del'); ?>" 
+                           width="100%">
                     </table>
                 </div>
             </div>

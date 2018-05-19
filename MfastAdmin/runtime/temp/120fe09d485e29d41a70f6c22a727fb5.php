@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:97:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\dashboard\index.html";i:1526123064;s:86:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\layout\default.html";i:1526123064;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1526123064;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1526123064;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:97:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\dashboard\index.html";i:1525672326;s:86:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\layout\default.html";i:1525672326;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1525672326;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1525672326;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -7,14 +7,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="renderer" content="webkit">
 
-<link rel="shortcut icon" href="/Php_WorkSpace/MfastAdmin/public/assets/img/favicon.ico" />
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
 <!-- Loading Bootstrap -->
-<link href="/Php_WorkSpace/MfastAdmin/public/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+<link href="/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 <!--[if lt IE 9]>
-  <script src="/Php_WorkSpace/MfastAdmin/public/assets/js/html5shiv.js"></script>
-  <script src="/Php_WorkSpace/MfastAdmin/public/assets/js/respond.min.js"></script>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
 <![endif]-->
 <script type="text/javascript">
     var require = {
@@ -453,7 +453,7 @@
                                         </tr>
                                         <tr>
                                             <td><?php echo __('Cdn url'); ?></td>
-                                            <td>/Php_WorkSpace/MfastAdmin/public</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td><?php echo __('Language'); ?></td>
@@ -516,6 +516,6 @@
                 </div>
             </div>
         </div>
-        <script src="/Php_WorkSpace/MfastAdmin/public/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/Php_WorkSpace/MfastAdmin/public/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
+        <script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\index\login.html";i:1526123064;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1526123064;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1526123064;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:93:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\index\login.html";i:1525672326;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1525672326;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1525672326;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,14 +7,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="renderer" content="webkit">
 
-<link rel="shortcut icon" href="/Php_WorkSpace/MfastAdmin/public/assets/img/favicon.ico" />
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
 <!-- Loading Bootstrap -->
-<link href="/Php_WorkSpace/MfastAdmin/public/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+<link href="/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 <!--[if lt IE 9]>
-  <script src="/Php_WorkSpace/MfastAdmin/public/assets/js/html5shiv.js"></script>
-  <script src="/Php_WorkSpace/MfastAdmin/public/assets/js/respond.min.js"></script>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
 <![endif]-->
 <script type="text/javascript">
     var require = {
@@ -80,7 +80,7 @@
                 <div class="login-screen">
                     <div class="well">
                         <div class="login-form">
-                            <img id="profile-img" class="profile-img-card" src="/Php_WorkSpace/MfastAdmin/public/assets/img/avatar.png" />
+                            <img id="profile-img" class="profile-img-card" src="/assets/img/avatar.png" />
                             <p id="profile-name" class="profile-name-card"></p>
 
                             <form action="" method="post" id="login-form">
@@ -100,7 +100,7 @@
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
                                     <input type="text" name="captcha" class="form-control" placeholder="<?php echo __('Captcha'); ?>" data-rule="<?php echo __('Captcha'); ?>:required;length(4)" />
                                     <span class="input-group-addon" style="padding:0;border:none;cursor:pointer;">
-                                        <img src="<?php echo rtrim('/Php_WorkSpace/MfastAdmin/public/', '/'); ?>/captcha" width="100" height="30" onclick="this.src = '<?php echo rtrim('/Php_WorkSpace/MfastAdmin/public/', '/'); ?>/captcha?r=' + Math.random();"/>
+                                        <img src="<?php echo rtrim('/', '/'); ?>/captcha" width="100" height="30" onclick="this.src = '<?php echo rtrim('/', '/'); ?>/captcha?r=' + Math.random();"/>
                                     </span>
                                 </div>
                                 <?php endif; ?>
@@ -120,6 +120,6 @@
                 </div>
             </div>
         </div>
-        <script src="/Php_WorkSpace/MfastAdmin/public/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/Php_WorkSpace/MfastAdmin/public/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
+        <script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo $site['version']; ?>"></script>
     </body>
 </html>

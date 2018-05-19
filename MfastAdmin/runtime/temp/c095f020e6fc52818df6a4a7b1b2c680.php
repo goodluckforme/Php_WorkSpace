@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:106:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\general\attachment\index.html";i:1525672326;s:86:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\layout\default.html";i:1525672326;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1525672326;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1525672326;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:98:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\auth\admin\index.html";i:1525672326;s:86:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\layout\default.html";i:1525672326;s:83:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\meta.html";i:1525672326;s:85:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\application\admin\view\common\script.html";i:1525672326;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,9 +58,12 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar(); ?>
+                        <?php echo build_toolbar('refresh,add,delete'); ?>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+                    <table id="table" class="table table-striped table-bordered table-hover" 
+                           data-operate-edit="<?php echo $auth->check('auth/admin/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('auth/admin/del'); ?>" 
+                           width="100%">
                     </table>
                 </div>
             </div>
@@ -68,7 +71,6 @@
         </div>
     </div>
 </div>
-
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:93:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/index\view\index\index.html";i:1526123064;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:93:"D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/index\view\index\index.html";i:1525672326;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +14,7 @@
 
         <!-- Bootstrap Core CSS -->
         <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/Php_WorkSpace/MfastAdmin/public/assets/css/index.css" rel="stylesheet">
+        <link href="/assets/css/index.css" rel="stylesheet">
 
         <!-- Plugin CSS -->
         <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-menu">
                         <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="/Php_WorkSpace/MfastAdmin/public/assets/img/logo.png" style="width:200px;" alt=""></a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="/assets/img/logo.png" style="width:200px;" alt=""></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-menu">
