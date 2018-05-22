@@ -1,0 +1,69 @@
+[ 2018-05-22T15:10:27+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:10:27+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.002000s ]
+[ 2018-05-22T15:10:27+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T15:10:27+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_wifi_clock_record' ORDER BY ORDINAL_POSITION [ RunTime:0.030001s ]
+[ 2018-05-22T15:19:48+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:19:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'test' [ RunTime:0.000000s ]
+[ 2018-05-22T15:19:48+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_test' [ RunTime:0.000000s ]
+[ 2018-05-22T15:19:48+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_test' ORDER BY ORDINAL_POSITION [ RunTime:0.024001s ]
+[ 2018-05-22T15:24:50+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:24:50+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T15:24:50+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T15:26:31+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:26:31+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.000000s ]
+[ 2018-05-22T15:26:31+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.000000s ]
+[ 2018-05-22T15:30:04+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:30:04+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'test' [ RunTime:0.001000s ]
+[ 2018-05-22T15:30:04+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_test' [ RunTime:0.001000s ]
+[ 2018-05-22T15:33:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:33:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T15:33:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.002000s ]
+[ 2018-05-22T15:33:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_wifi_clock_record' ORDER BY ORDINAL_POSITION [ RunTime:0.012001s ]
+[ 2018-05-22T15:59:45+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T15:59:45+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ 2018-05-22T15:59:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'wifi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-05-22T15:59:45+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'wifi' , 'wifi' , 'fa fa-list' , '' , 1 , 'normal' , 1526975985 , 1526975985) [ RunTime:0.060004s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (85 , 'wifi/clock' , 'clock' , 'fa fa-list' , '' , 1 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.048002s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.002000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (86 , 'wifi/clock/record' , '用户打卡记录管理' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.039002s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record/index' LIMIT 1 [ RunTime:0.003000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record/add' LIMIT 1 [ RunTime:0.002001s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record/edit' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record/del' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 87 , 'wifi/clock/record/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.002000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 87 , 'wifi/clock/record/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.001000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 87 , 'wifi/clock/record/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.000000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 87 , 'wifi/clock/record/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.001000s ]
+[ 2018-05-22T15:59:46+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 87 , 'wifi/clock/record/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1526975986 , 1526975986) [ RunTime:0.000000s ]
+[ 2018-05-22T16:37:27+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T16:37:27+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:37:27+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:38:16+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T16:38:16+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:38:16+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001001s ]
+[ 2018-05-22T16:38:58+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T16:38:58+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:38:58+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:39:09+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T16:39:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:39:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:39:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_wifi_clock_record' ORDER BY ORDINAL_POSITION [ RunTime:0.013001s ]
+[ 2018-05-22T16:40:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T16:40:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:40:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:42:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T16:42:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:42:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T16:42:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_wifi_clock_record' ORDER BY ORDINAL_POSITION [ RunTime:0.013001s ]
+[ 2018-05-22T17:16:42+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T17:16:42+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T17:16:42+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T17:17:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T17:17:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T17:17:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T17:17:54+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-05-22T17:17:54+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T17:17:54+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_wifi_clock_record' [ RunTime:0.001000s ]
+[ 2018-05-22T17:17:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_wifi_clock_record' ORDER BY ORDINAL_POSITION [ RunTime:0.017001s ]

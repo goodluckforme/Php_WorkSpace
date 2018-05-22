@@ -1,0 +1,40 @@
+[ 2018-05-18T09:18:55+08:00 ] ::1 ::1 GET /Php_WorkSpace/vip-admin-v1.2.0/public/index.php
+[ log ] localhost/Php_WorkSpace/vip-admin-v1.2.0/public/index.php [运行时间：0.211012s][吞吐率：4.74req/s] [内存消耗：4,243.37kb] [文件加载：49]
+[ info ] [ LANG ] D:\Apache24\htdocs\Php_WorkSpace\vip-admin-v1.2.0\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/Php_WorkSpace/vip-admin-v1.2.0/public/install/index.php?type=d_success',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1297196443.1521770930',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Apache24\htdocs\Php_WorkSpace\vip-admin-v1.2.0\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../html_template/index/index\index.html [ array (
+  0 => 'version',
+  1 => 'total',
+  2 => 'nowTotal',
+  3 => 'percentage',
+  4 => 'gather',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=vip_admin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vip_gather` [ RunTime:0.115007s ]
+[ sql ] [ SQL ] SELECT * FROM `vip_gather` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

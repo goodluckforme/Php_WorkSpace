@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{$config['title']}</title>
+    {css href="__STATIC__/__AF__/layui/css/layui.css,__STATIC__/__AC__/style.css" /}
+    <link rel="icon" href="__STATIC__/__AI__/code.png">
+</head>
+<body>
+<!-- admin -->
+<div class="layui-layout layui-layout-admin">
+    <!-- header -->
+    <div class="layui-header my-header">
+        <a href="javascript:;">
+            <!--<img class="my-header-logo" src="" alt="logo">-->
+            <a href="{:url('index')}"><div class="my-header-logo">{$config['title']}<span>&nbsp;{$config['version']}</span></div></a>
+        </a>
+        <div class="my-header-btn">
+            <button class="layui-btn layui-btn-small btn-nav"><i class="layui-icon">&#xe620;</i></button>
+        </div>
+        <!--<ul class="layui-nav" lay-filter="side-left">
+            <li class="layui-nav-item"><a href="javascript:;" href-url="demo/btn.html"><i class="layui-icon">&#xe621;</i>按钮</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&#xe621;</i>基础</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;" href-url="demo/btn.html"><i class="layui-icon">&#xe621;</i>按钮</a></dd>
+                    <dd><a href="javascript:;" href-url="demo/form.html"><i class="layui-icon">&#xe621;</i>表单</a></dd>
+                </dl>
+            </li>
+        </ul>-->
+        <ul class="layui-nav my-header-user-nav" lay-filter="side-right">
+            <li class="layui-nav-item">
+                <a class="name" href="javascript:;"><i class="layui-icon">&#xe629;</i>主题</a>
+                <dl class="layui-nav-child">
+                    <dd data-skin="0"><a href="javascript:;">默认</a></dd>
+                    <dd data-skin="1"><a href="javascript:;">纯白</a></dd>
+                    <dd data-skin="2"><a href="javascript:;">蓝白</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;" class="name"><img src="__STATIC__/__AI__/header.jpg" alt="logo"> {:session('vip_admin.account')} </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="{:url('login/out')}"><i class="layui-icon">&#xe609;</i>登出</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!-- side -->
+    <div class="layui-side my-side">
+        <ul class="layui-nav layui-nav-tree" lay-filter="side">
+            {volist name="menu" id="vo"}
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&{$vo.icon}</i>{$vo.name}</a>
+                {present name="vo.children"}
+                <dl class="layui-nav-child">
+                    {volist name="vo.children" id="vv"}
+                    <dd><a href="javascript:;" href-url="{:url($vv.url)}"><i class="layui-icon">&{$vv.icon}</i>{$vv.name}</a></dd>
+                    {/volist}
+                </dl>
+                {/present}
+            </li>
+            {/volist}
+        </ul>
+    </div>
+    <!-- body -->
+    <div class="layui-body my-body">
+        <div class="layui-tab layui-tab-card my-tab" lay-filter="card" lay-allowClose="true">
+            <ul class="layui-tab-title">
+                <li class="layui-this" lay-id="0"><span>欢迎页</span></li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <iframe id="iframe" src="{:url('System/index')}" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="layui-footer my-footer">
+        <p><a href="http://vip-admin.com" target="_blank">vip-admin后台模板v1.6.0</a>&nbsp;&nbsp;&&nbsp;&nbsp;<a href="http://vip-admin.com/index/gather/index.html" target="_blank">{$config['title']}{$config['version']}</a></p>
+        <p>{$config['copy']} & {$config['icp']}</p>
+    </div>
+</div>
+
+{$config['code']}
+
+{js href="__STATIC__/__AF__/layui/layui.js,__STATIC__/__AJ__/index.js"}
+</body>
+</html>

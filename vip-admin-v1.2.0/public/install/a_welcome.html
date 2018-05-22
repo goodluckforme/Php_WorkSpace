@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开始安装-安装协议</title>
+    <link rel="stylesheet" href="../static/admin/frame/layui/css/layui.css">
+    <link rel="stylesheet" href="css/install.css">
+</head>
+<body>
+
+<!-- main -->
+<div class="layui-main">
+    <h1 class="site-h1">开始安装</h1>
+    <!-- text -->
+    <blockquote class="layui-elem-quote">
+        <h1>安装协议</h1>
+        <p>感谢您使用vip-admin管理系统<em>v<?php echo $config['version']; ?></em>，vip-admin管理系基于layui1.0.9+thinkphp5.0.6开发而成。具体可以查看 <a target="_blank" href="http://vip-admin.com/index/gather/index.html#gather">这里</a>。</p>
+        <p>您在使用中有任何问题都可以访问 <a href="http://vip-admin.com/index/gather/index.html">vip-admin管理系统</a> 官方网站获取帮助，或者添加官方网站QQ群：436767646 【vip-admin 管理后台】。</p>
+        <p>本系统使用 <a target="_blank" href="http://vip-admin.com/">vip-admin Html v<?php echo $config['html_version']; ?> Html</a> 后台模板。</p>
+        <p>基于layui1.0.9+thinkphp5.0.6开发而成。</p>
+        <p>作用于二次开发，轻松高效的开发一款属于你自己的管理系统。</p>
+        <p>集成了系统配置、权限管理、用户管理、日志记录、数据库备份等基础功能。</p>
+        <p>该系统集成了安装引导程序，拿到源码直接安装，省去麻烦的创建数据库导入sql等步骤</p>
+    </blockquote>
+    <!-- btn -->
+    <div class="btn-box">
+        <a class="layui-btn layui-btn-small" href="./index.php?type=<?php echo $config['checkPage']; ?>">同意</a>
+    </div>
+</div>
+
+</body>
+</html>

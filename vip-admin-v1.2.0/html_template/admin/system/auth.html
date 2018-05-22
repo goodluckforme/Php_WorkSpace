@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>权限组</title>
+    <!--<link rel="stylesheet" href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">-->
+    {css href="__STATIC__/__AF__/layui/css/layui.css,__STATIC__/__AC__/style.css" /}
+    <link rel="icon" href="__STATIC__/__AI__/code.png">
+</head>
+<body class="body">
+
+<!--<fieldset class="layui-elem-field layui-field-title">
+    <legend>
+        <span class="layui-breadcrumb">
+            <a href="javascript:;">系统管理</a>
+            <a><cite>权限组</cite></a>
+        </span>
+    </legend>
+</fieldset>-->
+
+<div class="layui-tab">
+    <ul class="layui-tab-title">
+        <li class="layui-this">权限组</li>
+        <li>添加权限组</li>
+    </ul>
+    <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+
+            <div class="my-btn-box">
+                <span class="fl">
+                    <a class="layui-btn layui-btn-danger radius btn-delect" id="btn-delete-all">批量删除</a>
+                    <a class="layui-btn btn-add btn-default" id="btn-auth-group">分配权限</a>
+                </span>
+                <form class="fr layui-form" method="get" action="{:url('')}">
+                    <span class="layui-form-label">搜索条件：</span>
+                    <div class="layui-input-inline">
+                        <input name="search" type="text" autocomplete="off" placeholder="请输入搜索条件" class="layui-input" value="{$search?:''}" />
+                    </div>
+                    <button class="layui-btn mgl-20" lay-submit="" lay-filter="search">查询</button>
+                </form>
+            </div>
+
+            <table id="dateTable" class="layui-table layui-form">
+                <thead>
+                <tr>
+                    <th><input type="checkbox" lay-skin="primary" lay-filter="allChoose" /></th>
+                    <th>名称</th>
+                    <th style="width: 55px;">状态</th>
+                    <th style="width: 105px;">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {foreach $list as $vo}
+                <tr>
+                    <td><input type="checkbox" lay-skin="primary" data-id="{$vo.id}" lay-filter="oneChoose" /></td>
+                    <td>{$vo.title}</td>
+                    <td>
+                        {eq name="$vo.status" value="1"}
+                        <input type="checkbox" lay-skin="switch" lay-filter="switch" lay-text="ON|OFF" data-id="{$vo.id}" checked/>
+                        {else/}
+                        <input type="checkbox" lay-skin="switch" lay-filter="switch" lay-text="ON|OFF" data-id="{$vo.id}"/>
+                        {/eq}
+                    </td>
+                    <td>
+                        <button class="layui-btn layui-btn-small layui-btn-normal btn-edit" data-id="{$vo.id}">编辑</button>
+                        <button class="layui-btn layui-btn-small layui-btn-danger btn-delete" data-id="{$vo.id}">删除</button>
+                    </td>
+                </tr>
+                {/foreach}
+                </tbody>
+            </table>
+        </div>
+        <!-- 添加权限 -->
+        <div class="layui-tab-item">
+
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">权限组名称</label>
+                    <div class="layui-input-inline">
+                        <input name="title" type="text" lay-verify="title|required" autocomplete="off" placeholder="请输入名称" class="layui-input">
+                    </div>
+                    <div class="layui-input-inline">
+                        <input name="status" type="checkbox" lay-skin="switch" lay-filter="switch-status" lay-text="ON|OFF" checked value="1" />
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button type="button" class="layui-btn" lay-submit="" lay-filter="add-auth">添加</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+{js href="__STATIC__/__AF__/layui/layui.js,__STATIC__/__AJ__/table-tool.js"}
+<script type="text/javascript">
+    layui.use(['element','layer','form'], function(){
+        var $ = layui.jquery,element = layui.element,layer = layui.layer,form = layui.form();
+
+        // 初始化表格
+        $('#dateTable').DataTable({
+            "dom": '<"top">rt<"bottom"flp><"clear">',
+            "autoWidth": false,                     // 自适应宽度
+            "stateSave": true,                      // 刷新后保存页数
+            "order": [[ 1, "desc" ]],               // 排序
+            "searching": false,                     // 本地搜索
+            "info": true,                           // 控制是否显示表格左下角的信息
+            "stripeClasses": ["odd", "even"],       // 为奇偶行加上样式，兼容不支持CSS伪类的场合
+            "aoColumnDefs": [{                      // 指定列不参与排序
+                "orderable": false,
+                "aTargets": [0,3]                   // 对应你的表格的列数
+            }],
+            "pagingType": "simple_numbers",         // 分页样式 simple,simple_numbers,full,full_numbers
+            "language": {                           // 国际化
+                "url":'__STATIC__/__AJ__/language.json'
+            }
+        });
+
+        // 分配权限按钮监听
+        $('#btn-auth-group').on('click', function(){
+            // 弹窗
+            layer.open({
+                type: 2,
+                title: '权限分配',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['700px', '590px'],
+                content: "{:url('authAllocation')}" //iframe的url
+            });
+        });
+
+        //自定义验证规则
+        form.verify({
+            title: function(value){
+                if(value.length < 2){
+                    return '名称至少得2个字';
+                }
+            }
+        });
+
+        // 监听添加权限组的switch状态
+        form.on('switch(switch-status)', function(data){
+            /*layer.msg('状态:'+ (this.checked ? 'ON' : 'OFF'), {
+                offset: '6px'
+            });*/
+            // 赋值
+            $(data.elem).val(this.checked?1:0);
+        });
+
+        // 监听添加权限组提交
+        form.on('submit(add-auth)', function(data){
+            // 请求
+            $.post("{:url('addAuth')}",data.field,function(res){
+                if(res.status > 0){
+                    layer.msg(res.msg,{time:1800},function(){
+                        location.href = "{:url('auth')}";
+                    })
+                }else{
+                    layer.msg(res.msg,{time:1800});
+                }
+            });
+            return false;
+        });
+
+        // 监听状态开关显示隐藏
+        form.on('switch(switch)', function(data){
+            /*layer.msg('状态:'+ (this.checked ? 'ON' : 'OFF'), {
+             offset: '6px'
+             });*/
+            // 获取id
+            var id = $(this).attr('data-id');
+            // 获取状态
+            var status = this.checked?1:0;
+            // 请求显示或隐藏
+            $.post("{:url('authStatus')}",{id:id,status:status},function(res){
+                layer.msg(res.msg);
+            });
+        });
+
+        // 编辑
+        $(document).on('click','.btn-edit', function(){
+            // 弹窗
+            layer.open({
+                type: 2,
+                title: '权限组编辑',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['400px', '300px'],
+                content: "{:url('auth_edit')}?id="+$(this).attr('data-id')
+            });
+            // 更新渲染
+            form.render();
+        });
+
+        // 全选和反选
+        form.on('checkbox(allChoose)', function(data){
+            var child = $(data.elem).parents('table').find('tbody tr td:first-child input[type="checkbox"]');
+            child.each(function(index, item){
+                item.checked = data.elem.checked;
+            });
+            form.render('checkbox');
+        });
+
+        // 单选
+        form.on('checkbox(oneChoose)', function(data){
+            var tr = $(this).parents();
+            if(this.checked){
+                tr.addClass('selected');
+            }else{
+                tr.removeClass('selected');
+            }
+            form.render('checkbox');
+        });
+
+        // 单删除
+        $('.btn-delete').on('click',function(){
+            // 请求
+            deleteAll($(this).attr('data-id'),"{:url('deleteAuthGroup')}","{:url('auth')}")
+        });
+
+
+    });
+</script>
+</body>
+</html>

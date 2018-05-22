@@ -37,7 +37,7 @@ class Name extends Controller
 
     public function run(){
         $rs = db('forum_posts')->select();
-        $rs1 = json(0, '数据返回成功', 1000, $rs);
+        $rs1 = json(200, '查询成功', 10, $rs);
         return $rs1;
     }
 }

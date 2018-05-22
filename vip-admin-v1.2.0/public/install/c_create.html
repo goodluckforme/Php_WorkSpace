@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据库信息</title>
+    <link rel="stylesheet" href="../static/admin/frame/layui/css/layui.css">
+    <link rel="stylesheet" href="css/install.css">
+</head>
+<body>
+
+<!-- main -->
+<div class="layui-main">
+    <h1 class="site-h1">数据库信息</h1>
+    <!-- database online -->
+    <form class="layui-form" action="index.php?type=d_success" method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">地址</label>
+            <div class="layui-input-inline">
+                <input type="text" name="DB_HOST" required lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" value="127.0.0.1" />
+            </div>
+            <label class="layui-form-label">端口</label>
+            <div class="layui-input-inline">
+                <input type="text" name="DB_PORT" required lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" value="3306" />
+            </div>
+            <div class="layui-input-inline">
+                <select name="DB_TYPE" lay-verify="required" required>
+                    <option value="mysql">mysql</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">数据库名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="DB_NAME" required lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" />
+            </div>
+            <label class="layui-form-label">表前缀</label>
+            <div class="layui-input-inline">
+                <input type="text" name="DB_PREFIX" required lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" />
+            </div>
+            <div class="layui-form-mid layui-word-aux"><span style="color: red;">该项请以 "_" 结尾，不然可能出错;</span></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="DB_USER" required lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" />
+            </div>
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-inline">
+                <input type="text" name="DB_PWD" placeholder="请输入" autocomplete="off" class="layui-input" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="btn-box">
+                <a class="layui-btn layui-btn-small layui-btn-normal" href="./index.php?type=<?php echo $config['checkPage']?>">上一步</a>
+                <button type="submit" class="layui-btn layui-btn-small" lay-submit>下一步</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="../static/admin/frame/layui/layui.js"></script>
+<script>
+layui.use(['form','layer'], function(){
+    var form = layui.form(),layer = layui.layer;
+
+    //监听提交
+    form.on('submit(formDemo)', function(data){
+        layer.msg(JSON.stringify(data.field));
+        return false;
+    });
+});
+</script>
+</body>
+</html>

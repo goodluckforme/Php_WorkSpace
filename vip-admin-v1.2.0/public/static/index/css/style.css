@@ -1,0 +1,174 @@
+html,body{
+    width: 100%;
+    height: auto;
+}
+.header-index{
+    background-color: black;
+    border: none;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 18px;
+    color: #c2c2c2;
+    font-size: 20px;;
+}
+.logo:hover{
+    color: #c2c2c2;
+}
+.header .layui-nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    background: none;
+}
+.site-banner{
+    position: relative;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+.site-banner-bg, .site-banner-main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.site-banner-main .layui-anim{
+    margin-top: 180px;
+    font-size: 28px;
+    height: 30px;
+    line-height: 30px;
+}
+.site-banner-main .layui-anim span{
+    font-size: 12px;
+}
+.site-desc cite{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    color: #c2c2c2;
+    font-style: normal;
+}
+.site-download{
+    margin-top: 30px;
+    font-size: 0;
+}
+.site-download a{
+    position: relative;
+    padding: 0 35px 0 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid black;
+    font-size: 24px;
+    color: black;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.site-download a cite{
+    color: black;
+    position: absolute;
+    left: 20px;
+    font-size: 28px;
+}
+.site-version{
+    padding-top: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+.site-version span{
+    padding: 0 5px;
+}
+.layui-main{
+    position: relative;
+    width: 1020px;
+    margin: 0 auto;
+}
+.pay-box{
+    margin-top: 10px;
+}
+.pay-box>div{
+    width: 180px;
+    height: 200px;
+    display: inline-block;
+}
+.pay-box>div>p{
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.pay-box img{
+    width: 180px;
+    height: 180px;
+}
+.show-img-box{
+    text-align: center;
+}
+.show-img-box img{
+    width: 51%;
+    height: auto;
+    max-height: 200px;
+    margin-top: 1%;
+}
+.layui-main .layui-elem-quote{
+    border-left: 5px solid black;
+}
+.layui-main .layui-elem-quote h1{
+    font-size: 18px;
+    margin: 5px 0;
+}
+.layui-main .layui-collapse,.layui-main .layui-elem-quote{
+    margin: 20px 0;
+}
+.layui-main .layui-collapse .layui-colla-title{
+    color: black;
+}
+.target{
+    position: relative;
+    height: 22px;
+}
+.target span{
+    position: absolute;
+    display: inline-block;
+    height: 22px;
+}
+.target span:last-child{
+    top: 0;
+    right: 0;
+}
+.target em,.money{
+    color: #FF5722;
+    padding: 0 2px;
+}
+.layui-progress,.layui-progress-bar{
+    border-radius: 2px;
+}
+.layui-progress-gather{
+    margin: 20px 0;
+}
+.footer{
+    padding: 30px 0;
+    line-height: 30px;
+    text-align: center;
+    background-color: #eee;
+    color: #666;
+    font-weight: 300;
+}
+.footer a{
+    padding: 0 5px;
+}
+
+/* media */
+@media screen and (max-width: 1024px) {
+    .layui-main{ width: auto; margin: 0 10px; }
+    .site-banner{ height: 250px; }
+    .site-banner-main .layui-anim{ margin-top: 60px; }
+    .pay-box{ text-align: center; }
+    .pay-box>div{ width: 150px; height: 150px; }
+    .pay-box img{ width: 130px; height: 130px; }
+    .show-img-box img{ width: 98%; height: auto; max-height: 350px; }
+}
+
