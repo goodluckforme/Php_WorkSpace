@@ -1,0 +1,1533 @@
+---------------------------------------------------------------
+[ 2018-05-23T08:52:54+08:00 ] 127.0.0.1 GET /index.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '96582115a6cc79f4a3db3f64cc8c4e25d853de6f' LIMIT 1 [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.079004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:53:22+08:00 ] 127.0.0.1 GET /index.php/index/user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '96582115a6cc79f4a3db3f64cc8c4e25d853de6f' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:53:23+08:00 ] 127.0.0.1 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '96582115a6cc79f4a3db3f64cc8c4e25d853de6f' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:55:51+08:00 ] 127.0.0.1 GET /index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fwifi%2Fclock%2Frecord
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:55:51+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:55:52+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527036952419
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:57:33+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:57:34+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527037053975
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:57:40+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:57:40+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527037060454
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T08:58:35+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:00:51+08:00 ] 127.0.0.1 GET /index.php/admin/auth/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:00:51+08:00 ] 127.0.0.1 GET /index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527037251336
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `fa_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin` WHERE  `id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `fa_admin` WHERE  `id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:01:13+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:01:13+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527037273337
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:01:55+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:01:58+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:01:58+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527037318462
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:02:53+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:02:59+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [0]模板文件不存在:D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\wifi\clock\record\getdata.html
+---------------------------------------------------------------
+[ 2018-05-23T09:03:20+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:03:26+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record/getdata' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:03:59+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:08:08+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:12:54+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:14:28+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:14:50+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:14:56+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:15:13+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:15:19+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:15:44+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:15:50+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/getdata
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:15:56+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/edit
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:16:10+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:16:13+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:16:31+08:00 ] 127.0.0.1 GET /index.php/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '96582115a6cc79f4a3db3f64cc8c4e25d853de6f' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:16:49+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:17:07+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/edit
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:17:30+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:17:31+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038250802
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:17:50+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ error ] [2048]Declaration of app\admin\controller\wifi\clock\Record::edit() should be compatible with app\common\controller\Backend::edit($ids = NULL)
+---------------------------------------------------------------
+[ 2018-05-23T09:18:06+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:18:06+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038286532
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:18:28+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:18:34+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:19:27+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:19:27+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038367436
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:19:32+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/queryclockrecord
+[ error ] [4096]Argument 4 passed to think\Response::create() must be of the type array, integer given, called in D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\thinkphp\helper.php on line 461 and defined
+---------------------------------------------------------------
+[ 2018-05-23T09:22:53+08:00 ] 127.0.0.1 GET /index.php/admin/general/config
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:02+08:00 ] 127.0.0.1 GET /index.php/admin/general/config?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:03+08:00 ] 127.0.0.1 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:04+08:00 ] 127.0.0.1 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:04+08:00 ] 127.0.0.1 GET /index.php/admin/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:24+08:00 ] 127.0.0.1 GET /index.php/admin/general/config
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:32+08:00 ] 127.0.0.1 GET /index.php/admin/general/config?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:32+08:00 ] 127.0.0.1 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:33+08:00 ] 127.0.0.1 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:23:33+08:00 ] 127.0.0.1 GET /index.php/admin/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:03+08:00 ] 127.0.0.1 GET /index.php/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:03+08:00 ] 127.0.0.1 GET /index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038643579
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `fa_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin` WHERE  `id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `fa_admin` WHERE  `id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:07+08:00 ] 127.0.0.1 GET /index.php/admin/auth/adminlog?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/adminlog' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:08+08:00 ] 127.0.0.1 GET /index.php/admin/auth/adminlog/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038647668
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin_log` WHERE  `admin_id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin_log` WHERE  `admin_id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:08+08:00 ] 127.0.0.1 GET /index.php/admin/auth/group?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/group' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:09+08:00 ] 127.0.0.1 GET /index.php/admin/auth/group/index?sort=id&order=desc&_=1527038648784
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,5,4) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:10+08:00 ] 127.0.0.1 GET /index.php/admin/auth/rule?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/rule' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:10+08:00 ] 127.0.0.1 GET /index.php/admin/auth/rule/index?sort=weigh&order=desc&_=1527038650367
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:22+08:00 ] 127.0.0.1 GET /index.php/admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:27+08:00 ] 127.0.0.1 GET /index.php/admin/user/user?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:24:27+08:00 ] 127.0.0.1 GET /index.php/admin/user/user/index?sort=user.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038667151
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_group` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`user`.`group_id`,`user`.`username`,`user`.`nickname`,`user`.`password`,`user`.`salt`,`user`.`email`,`user`.`mobile`,`user`.`avatar`,`user`.`level`,`user`.`gender`,`user`.`birthday`,`user`.`bio`,`user`.`score`,`user`.`successions`,`user`.`maxsuccessions`,`user`.`prevtime`,`user`.`logintime`,`user`.`loginip`,`user`.`loginfailure`,`user`.`joinip`,`user`.`jointime`,`user`.`createtime`,`user`.`updatetime`,`user`.`token`,`user`.`status`,`user`.`verification`,group.id AS group__id,group.name AS group__name,group.rules AS group__rules,group.createtime AS group__createtime,group.updatetime AS group__updatetime,group.status AS group__status FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:25:18+08:00 ] 127.0.0.1 GET /index.php/admin/user/user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:25:19+08:00 ] 127.0.0.1 GET /index.php/admin/user/user/index?sort=user.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038719078
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_group` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`user`.`group_id`,`user`.`username`,`user`.`nickname`,`user`.`password`,`user`.`salt`,`user`.`email`,`user`.`mobile`,`user`.`avatar`,`user`.`level`,`user`.`gender`,`user`.`birthday`,`user`.`bio`,`user`.`score`,`user`.`successions`,`user`.`maxsuccessions`,`user`.`prevtime`,`user`.`logintime`,`user`.`loginip`,`user`.`loginfailure`,`user`.`joinip`,`user`.`jointime`,`user`.`createtime`,`user`.`updatetime`,`user`.`token`,`user`.`status`,`user`.`verification`,group.id AS group__id,group.name AS group__name,group.rules AS group__rules,group.createtime AS group__createtime,group.updatetime AS group__updatetime,group.status AS group__status FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:26:07+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T09:26:07+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527038767428
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:35+08:00 ] 127.0.0.1 GET /index.php/admin/user/user?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:36+08:00 ] 127.0.0.1 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:37+08:00 ] 127.0.0.1 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:37+08:00 ] 127.0.0.1 GET /index.php/admin/user/user?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:38+08:00 ] 127.0.0.1 GET /index.php/admin/user/user/index?sort=user.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527059797905
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_group` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`user`.`group_id`,`user`.`username`,`user`.`nickname`,`user`.`password`,`user`.`salt`,`user`.`email`,`user`.`mobile`,`user`.`avatar`,`user`.`level`,`user`.`gender`,`user`.`birthday`,`user`.`bio`,`user`.`score`,`user`.`successions`,`user`.`maxsuccessions`,`user`.`prevtime`,`user`.`logintime`,`user`.`loginip`,`user`.`loginfailure`,`user`.`joinip`,`user`.`jointime`,`user`.`createtime`,`user`.`updatetime`,`user`.`token`,`user`.`status`,`user`.`verification`,group.id AS group__id,group.name AS group__name,group.rules AS group__rules,group.createtime AS group__createtime,group.updatetime AS group__updatetime,group.status AS group__status FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 0,10 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:47+08:00 ] 127.0.0.1 GET /index.php/admin/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:48+08:00 ] 127.0.0.1 GET /index.php/admin/general/attachment?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/attachment' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:48+08:00 ] 127.0.0.1 GET /index.php/admin/general/attachment/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527059808451
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_attachment` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:49+08:00 ] 127.0.0.1 GET /index.php/admin/general/profile?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:49+08:00 ] 127.0.0.1 GET /index.php/admin/general/profile/index?sort=id&order=desc&offset=0&limit=10&_=1527059809477
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:53+08:00 ] 127.0.0.1 POST /index.php/admin/general/attachment/del/ids/3
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_attachment` WHERE  `id` IN (3) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `fa_attachment`    WHERE  `id` = 3 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('常规管理 附件管理 删除' , '{\"action\":\"del\",\"ids\":\"3\",\"params\":\"\"}' , '/index.php/admin/general/attachment/del/ids/3' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527059813) [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:54+08:00 ] 127.0.0.1 GET /index.php/admin/general/attachment/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527059808452
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_attachment` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:57+08:00 ] 127.0.0.1 GET /index.php/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:16:57+08:00 ] 127.0.0.1 GET /index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527059817509
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `fa_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `fa_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin` WHERE  `id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `fa_admin` WHERE  `id` IN (1,2,4,3,5) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:17:01+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:17:02+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527059822025
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:20:56+08:00 ] 127.0.0.1 GET /index.php/admin/Addon
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:21:10+08:00 ] 127.0.0.1 GET /index.php/admin/Ajax
+[ error ] [0]模板文件不存在:D:\Apache24\htdocs\Php_WorkSpace\MfastAdmin\public/../application/admin\view\ajax\index.html
+---------------------------------------------------------------
+[ 2018-05-23T15:32:30+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:31+08:00 ] 127.0.0.1 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:31+08:00 ] 127.0.0.1 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:31+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:32+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527060752079
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:36+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:43+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('wifi clock 用户打卡记录管理 添加' , '{\"dialog\":\"1\",\"row\":{\"clock_place\":\"asd\",\"lat\":\"3123\",\"lon\":\"123123\",\"wifiname\":\"asdq12\",\"wifi_distance\":\"2312\",\"gps_distance\":\"2312\"}}' , '/index.php/admin/wifi/clock/record/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527060763) [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:32:52+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('wifi clock 用户打卡记录管理 添加' , '{\"dialog\":\"1\",\"row\":{\"clock_place\":\"0\",\"lat\":\"3123\",\"lon\":\"123123\",\"wifiname\":\"asdq12\",\"wifi_distance\":\"2312\",\"gps_distance\":\"2312\"}}' , '/index.php/admin/wifi/clock/record/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527060772) [ RunTime:0.056003s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:33:02+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:33:11+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('wifi clock 用户打卡记录管理 添加' , '{\"dialog\":\"1\",\"row\":{\"clock_place\":\"wesqadeq\",\"lat\":\"1\",\"lon\":\"1\",\"wifiname\":\"11\",\"wifi_distance\":\"11\",\"gps_distance\":\"1\"}}' , '/index.php/admin/wifi/clock/record/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527060791) [ RunTime:0.059004s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:33:27+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/edit/ids/0?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:39:27+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:39:31+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES ('2qw2eq' , 0 , 0 , 'weqwe' , 0 , 0 , 1527061171) [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('wifi clock 用户打卡记录管理 添加' , '{\"dialog\":\"1\",\"row\":{\"clock_place\":\"2qw2eq\",\"lat\":\"\",\"lon\":\"\",\"wifiname\":\"weqwe\",\"wifi_distance\":\"\",\"gps_distance\":\"\"}}' , '/index.php/admin/wifi/clock/record/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527061171) [ RunTime:0.047003s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:39:32+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527060752080
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:39:35+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527060752081
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:39:44+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:41:59+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:42:00+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061319599
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:09+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:25+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:26+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061406051
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:29+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:30+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061410012
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:45+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:48+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:49+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061428994
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:43:59+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:44:00+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061440051
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:44:19+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:47:08+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:47:08+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061628242
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:47:14+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527061634) [ RunTime:0.034001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:48:18+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='' and ag.status='normal' ) [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:48:50+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527061730) [ RunTime:0.049003s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:49:03+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='' and ag.status='normal' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:49:55+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='' and ag.status='normal' ) [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:49:59+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:50:00+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061799689
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:50:02+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:50:02+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527061802650
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:50:23+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527061823) [ RunTime:0.082005s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:50:36+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527061836) [ RunTime:0.043002s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:50:39+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:51:06+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527061866) [ RunTime:0.088005s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:51:09+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:54:56+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ error ] [4]语法错误: unexpected '}'
+---------------------------------------------------------------
+[ 2018-05-23T15:55:55+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062155) [ RunTime:0.059004s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:56:18+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062178) [ RunTime:0.059004s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:57:54+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062274) [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2018-05-23T15:58:01+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2018-05-23T16:03:08+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062588) [ RunTime:0.073004s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:03:19+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062599) [ RunTime:0.044002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:06:02+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062762) [ RunTime:0.051003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:06:32+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (1) ORDER BY `id` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062792) [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:07:03+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (1) ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062823) [ RunTime:0.057003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:07:15+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (1) ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062835) [ RunTime:0.040002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:09:36+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527062976) [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:10:03+08:00 ] 127.0.0.1 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:10:04+08:00 ] 127.0.0.1 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:10:33+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527063033) [ RunTime:0.078004s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:10:58+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527063058) [ RunTime:0.062003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:11:14+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527063074) [ RunTime:0.027001s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:15:44+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [1]Call to undefined method app\admin\controller\wifi\clock\Record::json()
+---------------------------------------------------------------
+[ 2018-05-23T16:16:20+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527063380) [ RunTime:0.054004s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:16:50+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"username\":\"admin\",\"clock_place\":\"\\u56fd\\u9645\\u4f01\\u4e1a\\u4e2d\\u5fc33\\u671f\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527063409) [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:21:49+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"Admin_id\":\"1\",\"Clock_place\":\"\\u6b66\\u6c49\\u4f34\\u60a6\\u79d1\\u6280\",\"Lat\":\"30.476609\",\"Lon\":\"114.427465\",\"Wifiname\":\"wuhanbanyue\",\"Wifi_distance\":\"19\",\"Gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527063709) [ RunTime:0.064003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:31:18+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [8]Use of undefined constant Clock_place - assumed 'Clock_place'
+---------------------------------------------------------------
+[ 2018-05-23T16:32:00+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [8]Use of undefined constant Clock_place - assumed 'Clock_place'
+---------------------------------------------------------------
+[ 2018-05-23T16:32:13+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [8]Use of undefined constant clock_place - assumed 'clock_place'
+---------------------------------------------------------------
+[ 2018-05-23T16:32:25+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [8]Use of undefined constant clock_place - assumed 'clock_place'
+---------------------------------------------------------------
+[ 2018-05-23T16:33:26+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [8]Use of undefined constant clock_place - assumed 'clock_place'
+---------------------------------------------------------------
+[ 2018-05-23T16:35:57+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ error ] [8]Use of undefined constant lat - assumed 'lat'
+---------------------------------------------------------------
+[ 2018-05-23T16:36:18+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (30.476609 , '武汉伴悦科技' , NULL , 'wuhanbanyue' , 19 , 99 , 1527064578) [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u6b66\\u6c49\\u4f34\\u60a6\\u79d1\\u6280\",\"lat\":\"30.476609\",\"Lon\":\"114.427465\",\"wifiname\":\"wuhanbanyue\",\"wifi_distance\":\"19\",\"gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527064578) [ RunTime:0.060003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:40:20+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '武汉伴悦科技' , 30.476609 , 114.427465 , 'wuhanbanyue' , 19 , 99 , 1527064820) [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u6b66\\u6c49\\u4f34\\u60a6\\u79d1\\u6280\",\"lat\":\"30.476609\",\"lon\":\"114.427465\",\"wifiname\":\"wuhanbanyue\",\"wifi_distance\":\"19\",\"gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527064820) [ RunTime:0.027002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:42:49+08:00 ] 127.0.0.1 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:42:50+08:00 ] 127.0.0.1 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:42:50+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:42:50+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527064970253
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:43:00+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '武汉伴悦科技' , 30.476609 , 114.427465 , 'wuhanbanyue' , 19 , 99 , 1527064979) [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u6b66\\u6c49\\u4f34\\u60a6\\u79d1\\u6280\",\"lat\":\"30.476609\",\"lon\":\"114.427465\",\"wifiname\":\"wuhanbanyue\",\"wifi_distance\":\"19\",\"gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527064979) [ RunTime:0.058003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:43:03+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527064970254
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:43:51+08:00 ] 127.0.0.1 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '武汉伴悦科技' , 30.476609 , 114.427465 , 'wuhanbanyue' , 19 , 99 , 1527065031) [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u6b66\\u6c49\\u4f34\\u60a6\\u79d1\\u6280\",\"lat\":\"30.476609\",\"lon\":\"114.427465\",\"wifiname\":\"wuhanbanyue\",\"wifi_distance\":\"19\",\"gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '127.0.0.1' , 1527065031) [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:43:56+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527064970255
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:45:32+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?search=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527064970256
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.085005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  (  `id` LIKE 0 ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  (  `id` LIKE 0 ) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:45:34+08:00 ] 127.0.0.1 GET /index.php/admin/wifi/clock/record/index?search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527064970257
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:54:26+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='' and ag.status='normal' ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:54:27+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527065667382
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:23+08:00 ] 192.168.1.105 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=1,`updatetime`=1527065723  WHERE  `id` = 1 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"d3ccc19880b449607914d6ccdcbd6b54\",\"username\":\"admin\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.105' , 1527065723) [ RunTime:0.048003s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:29+08:00 ] 192.168.1.105 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=0,`logintime`=1527065729,`token`='07d0e9f6-7c2a-437a-8649-ba4b420bc621',`updatetime`=1527065729  WHERE  `id` = 1 [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"2b409d3d8f27632c7c58f27593547a05\",\"username\":\"admin\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.105' , 1527065729) [ RunTime:0.058004s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:30+08:00 ] 192.168.1.105 GET /index.php/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:31+08:00 ] 192.168.1.105 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:34+08:00 ] 192.168.1.105 GET /index.php/admin/general/profile?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:35+08:00 ] 192.168.1.105 GET /index.php/admin/general/profile/index?sort=id&order=desc&offset=0&limit=10&_=1527065735050
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:45+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:55:46+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527065745821
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:02+08:00 ] 192.168.1.105 GET /index.php/admin/general/profile?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:03+08:00 ] 192.168.1.105 GET /index.php/admin/general/profile/index?sort=id&order=desc&offset=0&limit=10&_=1527065762933
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin_log` WHERE  `admin_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:06+08:00 ] 192.168.1.105 POST /index.php/admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagewidth` , `imageheight` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 6157 , '128' , '128' , 'png' , 'image/png' , '/uploads/20180523/856f491e107f75ef34d7e87dbb7fe12f.png' , 1527065766 , 'local' , '0801bf48a44c237990be22179a0be17025ffdd10' , 1527065766 , 1527065766) [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"ic_launcher_round.png\"}' , '/index.php/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.105' , 1527065766) [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:09+08:00 ] 192.168.1.105 POST /index.php/admin/general.profile/update
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `avatar`='/uploads/20180523/856f491e107f75ef34d7e87dbb7fe12f.png',`updatetime`=1527065769  WHERE  `id` = 1 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('常规管理 个人配置 更新个人信息' , '{\"row\":{\"avatar\":\"\\/uploads\\/20180523\\/856f491e107f75ef34d7e87dbb7fe12f.png\",\"email\":\"admin@admin.com\",\"nickname\":\"Admin\",\"password\":\"\"}}' , '/index.php/admin/general.profile/update' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.105' , 1527065769) [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:16+08:00 ] 192.168.1.105 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:17+08:00 ] 192.168.1.105 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:17+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-23T16:56:17+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527065777198
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:15:06+08:00 ] 192.168.1.105 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '武汉伴悦科技' , 30.476609 , 114.427465 , 'wuhanbanyue' , 19 , 99 , 1527066906) [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u6b66\\u6c49\\u4f34\\u60a6\\u79d1\\u6280\",\"lat\":\"30.476609\",\"lon\":\"114.427465\",\"wifiname\":\"wuhanbanyue\",\"wifi_distance\":\"19\",\"gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.105' , 1527066906) [ RunTime:0.043003s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:15:31+08:00 ] 192.168.1.105 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:15:32+08:00 ] 192.168.1.105 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.039003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:15:32+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:15:33+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527066932711
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:15:55+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record/index?search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527066932712
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:39:17+08:00 ] 192.168.1.150 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027002s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486552 , 114.423007 , '\"chuyukeji2.4\"' , 0 , 1868 , 1527068356) [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486552\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"1868\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.150' , 1527068357) [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:39:31+08:00 ] 192.168.1.150 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486552 , 114.423007 , '\"chuyukeji2.4\"' , 0 , 1868 , 1527068371) [ RunTime:0.085004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486552\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"1868\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.150' , 1527068371) [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:39:38+08:00 ] 192.168.1.150 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486552 , 114.423007 , '\"chuyukeji2.4\"' , 0 , 1868 , 1527068378) [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486552\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"1868\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.150' , 1527068378) [ RunTime:0.072004s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:40:13+08:00 ] 192.168.1.150 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486552 , 114.423007 , '\"chuyukeji2.4\"' , 0 , 1868 , 1527068413) [ RunTime:0.083005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486552\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"1868\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.150' , 1527068413) [ RunTime:0.059003s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:40:24+08:00 ] 192.168.1.150 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486552 , 114.423007 , '\"chuyukeji2.4\"' , 0 , 94 , 1527068424) [ RunTime:0.157009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486552\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"94\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.150' , 1527068424) [ RunTime:0.040003s ]
+---------------------------------------------------------------
+[ 2018-05-23T17:41:10+08:00 ] 192.168.1.105 GET /index.php/admin/wifi/clock/record/index?search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527066932713
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
