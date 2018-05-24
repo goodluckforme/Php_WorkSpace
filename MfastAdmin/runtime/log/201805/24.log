@@ -1,0 +1,1435 @@
+---------------------------------------------------------------
+[ 2018-05-24T08:34:47+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.008001s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=1,`updatetime`=1527122087  WHERE  `id` = 1 [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.056004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"dd734f22bc693f2d62bb7759d3faa3dc\",\"username\":\"admin\",\"keeplogin\":\"1\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527122087) [ RunTime:0.095005s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:34:56+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=0,`logintime`=1527122096,`token`='5c0b6fd1-0c51-49ea-9b5d-43df4c673821',`updatetime`=1527122096  WHERE  `id` = 1 [ RunTime:0.041003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"7697e37773e23878094f4bcb4c9bd77a\",\"username\":\"admin\",\"keeplogin\":\"1\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527122096) [ RunTime:0.038002s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:34:57+08:00 ] 192.168.1.108 GET /index.php/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.063003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:34:58+08:00 ] 192.168.1.108 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:35:04+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:35:04+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527122104270
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:11+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486516 , 114.423048 , '\"chuyukeji2.4\"' , 0 , 96 , 1527122711) [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486516\",\"lon\":\"114.423048\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"96\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527122711) [ RunTime:0.043003s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:22+08:00 ] 192.168.1.108 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:23+08:00 ] 192.168.1.108 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:23+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:23+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527122723526
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:38+08:00 ] 192.168.1.108 GET /index.php/admin/user/user?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:38+08:00 ] 192.168.1.108 GET /index.php/admin/user/user/index?sort=user.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527122738134
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_group` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`user`.`group_id`,`user`.`username`,`user`.`nickname`,`user`.`password`,`user`.`salt`,`user`.`email`,`user`.`mobile`,`user`.`avatar`,`user`.`level`,`user`.`gender`,`user`.`birthday`,`user`.`bio`,`user`.`score`,`user`.`successions`,`user`.`maxsuccessions`,`user`.`prevtime`,`user`.`logintime`,`user`.`loginip`,`user`.`loginfailure`,`user`.`joinip`,`user`.`jointime`,`user`.`createtime`,`user`.`updatetime`,`user`.`token`,`user`.`status`,`user`.`verification`,group.id AS group__id,group.name AS group__name,group.rules AS group__rules,group.createtime AS group__createtime,group.updatetime AS group__updatetime,group.status AS group__status FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:45:46+08:00 ] 192.168.1.108 GET /index.php/admin/user/user/edit/ids/1?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_group` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `fa_user_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:16+08:00 ] 192.168.1.108 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:17+08:00 ] 192.168.1.108 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:17+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:18+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527122837679
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:30+08:00 ] 192.168.1.108 GET /index.php/admin/user/user?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'user/user' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:31+08:00 ] 192.168.1.108 GET /index.php/admin/user/user/index?sort=user.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527122850709
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_group` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`user`.`group_id`,`user`.`username`,`user`.`nickname`,`user`.`password`,`user`.`salt`,`user`.`email`,`user`.`mobile`,`user`.`avatar`,`user`.`level`,`user`.`gender`,`user`.`birthday`,`user`.`bio`,`user`.`score`,`user`.`successions`,`user`.`maxsuccessions`,`user`.`prevtime`,`user`.`logintime`,`user`.`loginip`,`user`.`loginfailure`,`user`.`joinip`,`user`.`jointime`,`user`.`createtime`,`user`.`updatetime`,`user`.`token`,`user`.`status`,`user`.`verification`,group.id AS group__id,group.name AS group__name,group.rules AS group__rules,group.createtime AS group__createtime,group.updatetime AS group__updatetime,group.status AS group__status FROM `fa_user` `user` LEFT JOIN `fa_user_group` `group` ON `user`.`group_id`=`group`.`id` ORDER BY `user`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:45+08:00 ] 192.168.1.108 GET /index.php/admin/index/logout
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `token`='',`updatetime`=1527122865  WHERE  `id` = 1 [ RunTime:0.095006s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:47:58+08:00 ] 192.168.1.108 POST /index.php/admin/index/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"5903d7ff3e7697b8087e15cb13db0f04\",\"username\":\"much1\"}' , '/index.php/admin/index/login' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527122878) [ RunTime:0.095005s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:48:07+08:00 ] 192.168.1.108 POST /index.php/admin/index/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"de99bd9ce2f3d41195a8764bd7d4cc84\",\"username\":\"much1\",\"keeplogin\":\"1\"}' , '/index.php/admin/index/login' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527122887) [ RunTime:0.095005s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:48:19+08:00 ] 192.168.1.108 POST /index.php/admin/index/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"beeb83393f05267530492bb8c554e529\",\"username\":\"much1\",\"keeplogin\":\"1\"}' , '/index.php/admin/index/login' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527122899) [ RunTime:0.087005s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:52:21+08:00 ] 192.168.1.108 GET /index.php/captcha.html
+[ error ] [1]Call to undefined function think\captcha\imagecreate()
+---------------------------------------------------------------
+[ 2018-05-24T08:53:06+08:00 ] 192.168.1.108 POST /index.php/index/user/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `email` = '2@163.com' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '15171462306' LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:55:03+08:00 ] 192.168.1.108 POST /index.php/index/user/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `email` = '2@163.com' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '15171462307' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `email` , `mobile` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `createtime` , `updatetime`) VALUES ('much2' , '6248f2876c2baab5c1979de9111c9cd7' , '2@163.com' , '15171462307' , 1 , 0 , '' , 'much2' , 'ypNcPj' , 1527123303 , '192.168.1.108' , 1527123303 , '192.168.1.108' , 1527123303 , 'normal' , 1527123303 , 1527123303) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' , 3 , 1527123303 , 1529715303) [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:55:04+08:00 ] 192.168.1.108 GET /index.php/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:55:05+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:56:11+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2018-05-24T08:56:12+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:00:36+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:00:37+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:00:41+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:00:41+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:02:25+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:02:25+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:02:30+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:02:30+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:02:57+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:02:58+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:03:03+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030002s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.010001s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:03:03+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:03:08+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:03:08+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:03:18+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:03:18+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:07+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:08+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:12+08:00 ] 192.168.1.108 GET /index.php/index/user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:12+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:18+08:00 ] 192.168.1.108 GET /index.php/index/user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:18+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:19+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:19+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:21+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:25+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:26+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:31+08:00 ] 192.168.1.108 GET /index.php/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:31+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:33+08:00 ] 192.168.1.108 GET /index.php/index/user/logout.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `fa_user_token`    WHERE  `token` = 'a1f0df7ed47434e67bd2ecf2321594e0a9b84d96' [ RunTime:0.106006s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:34+08:00 ] 192.168.1.108 GET /index.php/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:38+08:00 ] 192.168.1.108 POST /index.php/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `logintime`=1527123878,`updatetime`=1527123878  WHERE  `id` = 3 [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.049002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('272c51dd399360f931b58d5fdd85363864e68d33' , 3 , 1527123878 , 1529715878) [ RunTime:0.043002s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:39+08:00 ] 192.168.1.108 GET /index.php/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:39+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:43+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:44+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:55+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:04:56+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:13+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:13+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:20+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:28+08:00 ] 192.168.1.108 GET /index.php/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:28+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:39+08:00 ] 192.168.1.108 GET /index.php/index/user/profile
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:05:40+08:00 ] 192.168.1.108 GET /index.php/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:06:00+08:00 ] 192.168.1.108 GET /index.php/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:08:13+08:00 ] 192.168.1.108 GET /index.php/api
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:08:25+08:00 ] 192.168.1.108 GET /index.php/api/token
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:08:36+08:00 ] 192.168.1.108 GET /index.php/api/token/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:09:17+08:00 ] 192.168.1.108 GET /index.php/api/validate/check_email_available
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` WHERE  `email` = '='  AND `id` <> 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:10:43+08:00 ] 192.168.1.108 POST /index.php/api/validate/check_email_available
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` WHERE  `email` = '121@163.com'  AND `id` <> 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:12:28+08:00 ] 192.168.1.108 POST /index.php/api/validate/check_email_available
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` WHERE  `email` = '121@163.com'  AND `id` <> 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:12:36+08:00 ] 192.168.1.108 POST /index.php/api/validate/check_email_available
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` WHERE  `email` = '121@163.com'  AND `id` <> 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:23:50+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (1 , '凌家山北路' , 30.486668836806 , 114.42307996962 , '\"chuyukeji2.4\"' , 0 , 79 , 1527125030) [ RunTime:0.083004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.061004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"1\",\"clock_place\":\"\\u51cc\\u5bb6\\u5c71\\u5317\\u8def\",\"lat\":\"30.486668836805556\",\"lon\":\"114.42307996961806\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"79\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527125030) [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2018-05-24T09:32:45+08:00 ] 192.168.1.108 GET /index.php/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:28:11+08:00 ] 192.168.1.108 GET /index.php/api/user/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:29:56+08:00 ] 192.168.1.108 GET /index.php/api/user/wificolock
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:32:33+08:00 ] 192.168.1.108 GET /index.php/api/user?account=much2&password=fastmuch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:32:48+08:00 ] 192.168.1.108 GET /index.php/api/user/login?account=much2&password=fastmuch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '272c51dd399360f931b58d5fdd85363864e68d33' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527123878,`logintime`=1527129168,`updatetime`=1527129168  WHERE  `id` = 3 [ RunTime:0.038002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('921e42b88fa87535708ce200e5f60c2a5bfddbde' , 3 , 1527129168 , 1529721168) [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '921e42b88fa87535708ce200e5f60c2a5bfddbde' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:33:59+08:00 ] 192.168.1.108 GET /index.php/api/user/login?account=much2&password=fastmuch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527129168,`logintime`=1527129239,`updatetime`=1527129239  WHERE  `id` = 3 [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('a54c2cd50192bdc8712afe65325476e0acc619e7' , 3 , 1527129239 , 1529721239) [ RunTime:0.038003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a54c2cd50192bdc8712afe65325476e0acc619e7' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:35:58+08:00 ] 192.168.1.108 GET /index.php/api/user/login?account=much2&password=fastmuch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527129239,`logintime`=1527129358,`updatetime`=1527129358  WHERE  `id` = 3 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('89b039a0a9a18eeabdb0c46abd101fca4954b19b' , 3 , 1527129358 , 1529721358) [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '89b039a0a9a18eeabdb0c46abd101fca4954b19b' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:36:45+08:00 ] 192.168.1.108 GET /index.php/api/user/login?account=much2&password=fastmuch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527129358,`logintime`=1527129405,`updatetime`=1527129405  WHERE  `id` = 3 [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('6b05de1c003e4b956bd55285f1bb4a1e2f57620c' , 3 , 1527129405 , 1529721405) [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6b05de1c003e4b956bd55285f1bb4a1e2f57620c' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:37:25+08:00 ] 192.168.1.108 GET /index.php/api/user/login?account=much2&password=fastmuc
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T10:37:33+08:00 ] 192.168.1.108 GET /index.php/api/user/login?account=much2&password=fastmuch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527129405,`logintime`=1527129452,`updatetime`=1527129452  WHERE  `id` = 3 [ RunTime:0.065004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('5d6fe3dddce1caa60ae88ae92ee65f6f09e7c21b' , 3 , 1527129452 , 1529721452) [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5d6fe3dddce1caa60ae88ae92ee65f6f09e7c21b' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T11:50:30+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.918053s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.911052s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much' LIMIT 1 [ RunTime:0.175010s ]
+---------------------------------------------------------------
+[ 2018-05-24T11:50:36+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527129452,`logintime`=1527133836,`loginip`='192.168.1.153',`updatetime`=1527133836  WHERE  `id` = 3 [ RunTime:0.249015s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.075005s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('68b8c3704a2a97356a7595905fecf40352c41f92' , 3 , 1527133836 , 1529725836) [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '68b8c3704a2a97356a7595905fecf40352c41f92' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T11:51:35+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527133836,`logintime`=1527133895,`updatetime`=1527133895  WHERE  `id` = 3 [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('475ec423ae0ad8c438ca423f28c8e807f3c78908' , 3 , 1527133895 , 1529725895) [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '475ec423ae0ad8c438ca423f28c8e807f3c78908' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T11:52:18+08:00 ] 192.168.1.108 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527133895,`logintime`=1527133938,`loginip`='192.168.1.108',`updatetime`=1527133938  WHERE  `id` = 3 [ RunTime:0.132007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('a924ed5dd5d9fd24aaa4ce004bda375c847f6e63' , 3 , 1527133938 , 1529725938) [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a924ed5dd5d9fd24aaa4ce004bda375c847f6e63' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T11:55:55+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527133938,`logintime`=1527134154,`loginip`='192.168.1.153',`updatetime`=1527134154  WHERE  `id` = 3 [ RunTime:0.327018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('4b035a5a2802c1a5ac1ec43540b0a52ffc0daea0' , 3 , 1527134155 , 1529726155) [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '4b035a5a2802c1a5ac1ec43540b0a52ffc0daea0' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T12:00:58+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054003s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527134154,`logintime`=1527134458,`updatetime`=1527134458  WHERE  `id` = 3 [ RunTime:0.135008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('f9513967e9184105e1675801a84590ca8460cd34' , 3 , 1527134458 , 1529726458) [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f9513967e9184105e1675801a84590ca8460cd34' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T12:01:39+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.113006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527134458,`logintime`=1527134499,`updatetime`=1527134499  WHERE  `id` = 3 [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('f5b6ee63b8e56ca71be4674c113abb4f86186609' , 3 , 1527134499 , 1529726499) [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f5b6ee63b8e56ca71be4674c113abb4f86186609' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T13:34:36+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527134499,`logintime`=1527140076,`updatetime`=1527140076  WHERE  `id` = 3 [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('70063552bcc554df2287f03bba8d71d5ad564c13' , 3 , 1527140076 , 1529732076) [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '70063552bcc554df2287f03bba8d71d5ad564c13' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-24T13:34:44+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.106006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much' LIMIT 1 [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2018-05-24T13:34:48+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527140076,`logintime`=1527140088,`updatetime`=1527140088  WHERE  `id` = 3 [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('70ffa6615afb939051bb6413f4b6551156d62840' , 3 , 1527140088 , 1529732088) [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '70ffa6615afb939051bb6413f4b6551156d62840' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-24T14:11:07+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527140088,`logintime`=1527142267,`updatetime`=1527142267  WHERE  `id` = 3 [ RunTime:0.058004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('c346b89463571c359cfa2fba1248e08072a92940' , 3 , 1527142267 , 1529734267) [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'c346b89463571c359cfa2fba1248e08072a92940' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T14:53:32+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:1.142066s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.773044s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.172010s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527142267,`logintime`=1527144811,`updatetime`=1527144811  WHERE  `id` = 3 [ RunTime:0.290017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('c015813b88a34a09bbcb2bf5c21856b5d1cd2512' , 3 , 1527144811 , 1529736811) [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'c015813b88a34a09bbcb2bf5c21856b5d1cd2512' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:13:10+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098005s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.065004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527144811,`logintime`=1527145989,`updatetime`=1527145989  WHERE  `id` = 3 [ RunTime:0.195011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('5dea8951b223b20e6fa4bfbd08d92d3d675d02e6' , 3 , 1527145989 , 1529737989) [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5dea8951b223b20e6fa4bfbd08d92d3d675d02e6' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:14:53+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527145989,`logintime`=1527146092,`updatetime`=1527146092  WHERE  `id` = 3 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('2b8f7f25a9db278197a3b3a2ac5454e77458fa8f' , 3 , 1527146092 , 1529738092) [ RunTime:0.051002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2b8f7f25a9db278197a3b3a2ac5454e77458fa8f' LIMIT 1 [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:15:36+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146092,`logintime`=1527146136,`updatetime`=1527146136  WHERE  `id` = 3 [ RunTime:0.074004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('265e6eebf428c86b30886f9b42987d6018a20bf3' , 3 , 1527146136 , 1529738136) [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '265e6eebf428c86b30886f9b42987d6018a20bf3' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:16:32+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146136,`logintime`=1527146192,`updatetime`=1527146192  WHERE  `id` = 3 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('5a7aecf30a84d1b569c8e9ca17c00a4b0fe90bcc' , 3 , 1527146192 , 1529738192) [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5a7aecf30a84d1b569c8e9ca17c00a4b0fe90bcc' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:24:55+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146192,`logintime`=1527146695,`updatetime`=1527146695  WHERE  `id` = 3 [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('a76d9ac183496107bc8b9c50288e01278b2b19e6' , 3 , 1527146695 , 1529738695) [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a76d9ac183496107bc8b9c50288e01278b2b19e6' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:25:03+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146695,`logintime`=1527146703,`updatetime`=1527146703  WHERE  `id` = 3 [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('2a1c50d1b9105d54368ccc6d91642706db09c292' , 3 , 1527146703 , 1529738703) [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2a1c50d1b9105d54368ccc6d91642706db09c292' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:26:27+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146703,`logintime`=1527146787,`updatetime`=1527146787  WHERE  `id` = 3 [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('f4ecb7758ac2e94325348c99a255d59a6ea072fc' , 3 , 1527146787 , 1529738787) [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f4ecb7758ac2e94325348c99a255d59a6ea072fc' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:26:35+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146787,`logintime`=1527146795,`updatetime`=1527146795  WHERE  `id` = 3 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('85309bbefaa8d43d6d08cb17704c0846b89422a9' , 3 , 1527146795 , 1529738795) [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '85309bbefaa8d43d6d08cb17704c0846b89422a9' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:27:03+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146795,`logintime`=1527146823,`updatetime`=1527146823  WHERE  `id` = 3 [ RunTime:0.107006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('ed519fd4a9445fa739d86d16f82d24829d8085a4' , 3 , 1527146823 , 1529738823) [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'ed519fd4a9445fa739d86d16f82d24829d8085a4' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:28:04+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146823,`logintime`=1527146884,`updatetime`=1527146884  WHERE  `id` = 3 [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.061004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('3ada740f4dc97f47daca02e168b0868f8c20ebbb' , 3 , 1527146884 , 1529738884) [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '3ada740f4dc97f47daca02e168b0868f8c20ebbb' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:28:05+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.036003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146884,`logintime`=1527146885,`updatetime`=1527146885  WHERE  `id` = 3 [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('8390a51c1cba473e91744aa0f72aae879a7336fb' , 3 , 1527146885 , 1529738885) [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '8390a51c1cba473e91744aa0f72aae879a7336fb' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:28:06+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146885,`updatetime`=1527146885  WHERE  `id` = 3 [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('ae3901e0fde879a80cf3223190f47af8d8dc5ee9' , 3 , 1527146885 , 1529738885) [ RunTime:0.099006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'ae3901e0fde879a80cf3223190f47af8d8dc5ee9' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:28:06+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.128007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.067004s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146885,`updatetime`=1527146885  WHERE  `id` = 3 [ RunTime:0.153009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('10647e233148ee618cc7d8c8e72b2b267f9be43f' , 3 , 1527146886 , 1529738886) [ RunTime:0.250015s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '10647e233148ee618cc7d8c8e72b2b267f9be43f' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:28:06+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.721042s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `logintime`=1527146886,`updatetime`=1527146886  WHERE  `id` = 3 [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('c7661dd2675bf155a7c9eeccc42c67e7b9f4b57d' , 3 , 1527146886 , 1529738886) [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'c7661dd2675bf155a7c9eeccc42c67e7b9f4b57d' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:28:37+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146886,`logintime`=1527146916,`updatetime`=1527146916  WHERE  `id` = 3 [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('d1443c686975e277e88dae013a951dd84f0a6553' , 3 , 1527146916 , 1529738916) [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd1443c686975e277e88dae013a951dd84f0a6553' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:30:52+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527146916,`logintime`=1527147052,`updatetime`=1527147052  WHERE  `id` = 3 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('e9de9250ac2df3d6304403abeb3a2acd2e89b067' , 3 , 1527147052 , 1529739052) [ RunTime:0.045002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e9de9250ac2df3d6304403abeb3a2acd2e89b067' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T15:32:00+08:00 ] 192.168.1.153 POST /index.php/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1527147052,`logintime`=1527147119,`updatetime`=1527147119  WHERE  `id` = 3 [ RunTime:0.137007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('a7977382d1c077a978166bac4777a003bdc43bff' , 3 , 1527147119 , 1529739119) [ RunTime:0.061004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'a7977382d1c077a978166bac4777a003bdc43bff' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:09:39+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:1.615093s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:1.456083s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486513 , 114.423069 , '\"chuyukeji5.0\"' , 3 , 116 , 1527152978) [ RunTime:0.519030s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.103006s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486513\",\"lon\":\"114.423069\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"3\",\"gps_distance\":\"116\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527152978) [ RunTime:0.064004s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:20:00+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032002s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486674262153 , 114.42315321181 , '\"chuyukeji5.0\"' , 1 , 99 , 1527153599) [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48667426215278\",\"lon\":\"114.42315321180556\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"1\",\"gps_distance\":\"99\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527153600) [ RunTime:0.033002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:06+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.338019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"bd30237ff5208de6b8869c24fbfa0995\",\"username\":\"much2\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527153846) [ RunTime:0.087005s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:15+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054003s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"448b3e73ad5c88f11ee601c8f51e7c83\",\"username\":\"much2\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527153855) [ RunTime:0.356021s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:23+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"70173ebaf46e41e1fcba1038363842fc\",\"username\":\"much2\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527153863) [ RunTime:0.093005s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:27+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'much2' LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"6323c343980bf9ecd31243c91b4b081f\",\"username\":\"much2\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527153867) [ RunTime:0.054003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:32+08:00 ] 192.168.1.108 POST /index.php/admin/index/login?url=%2Findex.php%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.043003s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `logintime`=1527153872,`token`='a7352015-4afd-49ac-b01b-718785bf7600',`updatetime`=1527153872  WHERE  `id` = 1 [ RunTime:0.066003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\",\"__token__\":\"25a65134887093b118cb9d2fb9ffa8e7\",\"username\":\"admin\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527153872) [ RunTime:0.096006s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:33+08:00 ] 192.168.1.108 GET /index.php/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.033001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.066003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.017001s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:35+08:00 ] 192.168.1.108 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:39+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:24:39+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527153879430
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:40:25+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486519 , 114.423013 , '\"chuyukeji2.4\"' , 0 , 92 , 1527154824) [ RunTime:0.077004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486519\",\"lon\":\"114.423013\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154825) [ RunTime:0.200011s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:40:53+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527153879431
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:41:19+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486519 , 114.423013 , '\"chuyukeji2.4\"' , 0 , 92 , 1527154879) [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486519\",\"lon\":\"114.423013\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154879) [ RunTime:0.071004s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:41:29+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486519 , 114.423013 , '\"chuyukeji2.4\"' , 0 , 92 , 1527154889) [ RunTime:0.134008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486519\",\"lon\":\"114.423013\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154889) [ RunTime:0.037002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:41:39+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486519 , 114.423013 , '\"chuyukeji2.4\"' , 0 , 92 , 1527154899) [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486519\",\"lon\":\"114.423013\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154899) [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:41:47+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486786295573 , 114.42305881076 , '\"chuyukeji2.4\"' , 0 , 62 , 1527154907) [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486786295572916\",\"lon\":\"114.42305881076389\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"62\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154907) [ RunTime:0.062003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:01+08:00 ] 192.168.1.108 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:02+08:00 ] 192.168.1.108 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:02+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:03+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922976
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:20+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486536 , 114.422959 , '\"chuyukeji2.4\"' , 0 , 91 , 1527154940) [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486536\",\"lon\":\"114.422959\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"91\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154940) [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:30+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486536 , 114.422959 , '\"chuyukeji2.4\"' , 0 , 91 , 1527154950) [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486536\",\"lon\":\"114.422959\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"91\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154950) [ RunTime:0.298017s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:39+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486536 , 114.422959 , '\"chuyukeji2.4\"' , 0 , 91 , 1527154958) [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486536\",\"lon\":\"114.422959\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"91\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527154958) [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:59+08:00 ] 192.168.1.108 POST /index.php/admin/wifi/clock/record/del/ids/21,20,19,18,17,16,15,14,13,12
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (21,20,19,18,17,16,15,14,13,12) [ RunTime:0.013000s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 12 [ RunTime:0.074005s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 13 [ RunTime:0.062003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 14 [ RunTime:0.035002s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 15 [ RunTime:0.029002s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 16 [ RunTime:0.335019s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 17 [ RunTime:0.087005s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 18 [ RunTime:0.062004s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 19 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 20 [ RunTime:0.036002s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 21 [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"del\",\"ids\":\"21,20,19,18,17,16,15,14,13,12\",\"params\":\"\"}' , '/index.php/admin/wifi/clock/record/del/ids/21,20,19,18,17,16,15,14,13,12' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527154979) [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:42:59+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922977
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:43:06+08:00 ] 192.168.1.108 POST /index.php/admin/wifi/clock/record/del/ids/24,23,22,11,10,9,8,7,6,5
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (24,23,22,11,10,9,8,7,6,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 5 [ RunTime:0.106006s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 6 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 7 [ RunTime:0.054004s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 8 [ RunTime:0.065003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 9 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 10 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 11 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 22 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 23 [ RunTime:0.064003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 24 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"del\",\"ids\":\"24,23,22,11,10,9,8,7,6,5\",\"params\":\"\"}' , '/index.php/admin/wifi/clock/record/del/ids/24,23,22,11,10,9,8,7,6,5' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527154986) [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:43:06+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922978
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:43:10+08:00 ] 192.168.1.108 POST /index.php/admin/wifi/clock/record/del/ids/4,1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (4,1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 1 [ RunTime:0.063004s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 4 [ RunTime:0.209012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"del\",\"ids\":\"4,1\",\"params\":\"\"}' , '/index.php/admin/wifi/clock/record/del/ids/4,1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527154990) [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:43:10+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922979
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:43:57+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486792263455 , 114.42301784939 , '\"chuyukeji2.4\"' , 0 , 62 , 1527155037) [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486792263454863\",\"lon\":\"114.42301784939237\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"62\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155037) [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:44:01+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922980
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:44:07+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486854383681 , 114.42311957465 , '\"chuyukeji2.4\"' , 0 , 55 , 1527155047) [ RunTime:0.206012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486854383680555\",\"lon\":\"114.42311957465277\",\"wifiname\":\"\\\"chuyukeji2.4\\\"\",\"wifi_distance\":\"0\",\"gps_distance\":\"55\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155047) [ RunTime:0.104006s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:30+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922981
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:33+08:00 ] 192.168.1.108 POST /index.php/admin/wifi/clock/record/del/ids/26,25
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (26,25) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 25 [ RunTime:0.099005s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 26 [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"del\",\"ids\":\"26,25\",\"params\":\"\"}' , '/index.php/admin/wifi/clock/record/del/ids/26,25' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527155373) [ RunTime:0.032001s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:33+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922982
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:40+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922983
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:46+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.48652 , 114.423022 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155385) [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48652\",\"lon\":\"114.423022\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155386) [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:52+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922984
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:49:56+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.48652 , 114.423022 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155395) [ RunTime:0.073005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48652\",\"lon\":\"114.423022\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155396) [ RunTime:0.114007s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:50:00+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527154922985
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:50:06+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.48652 , 114.423022 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155405) [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48652\",\"lon\":\"114.423022\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155406) [ RunTime:0.060004s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:50:13+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.48652 , 114.423022 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155413) [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48652\",\"lon\":\"114.423022\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155413) [ RunTime:0.056003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:50:26+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.48652 , 114.423022 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155425) [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48652\",\"lon\":\"114.423022\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155425) [ RunTime:0.047003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:50:49+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.48652 , 114.423022 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155449) [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48652\",\"lon\":\"114.423022\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155449) [ RunTime:0.060003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:51:07+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486518 , 114.423007 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155467) [ RunTime:0.130007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486518\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155467) [ RunTime:0.056003s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:51:16+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486518 , 114.423007 , '\"chuyukeji5.0\"' , 2 , 92 , 1527155476) [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486518\",\"lon\":\"114.423007\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"2\",\"gps_distance\":\"92\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155476) [ RunTime:0.136008s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:41+08:00 ] 192.168.1.108 GET /index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005001s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:42+08:00 ] 192.168.1.108 GET /index.php/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:50+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wifi/clock/record' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:50+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527155630291
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:55+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/34?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:55+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/31?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:55+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/28?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066004s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:55+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/27?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 27 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:56+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/30?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:56+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/33?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:57+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/32?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:53:57+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/edit/ids/29?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:54:03+08:00 ] 192.168.1.108 POST /index.php/admin/wifi/clock/record/del/ids/34,33,32,31,30,29,28,27
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `id` IN (34,33,32,31,30,29,28,27) [ RunTime:0.005000s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 27 [ RunTime:0.135008s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 28 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 29 [ RunTime:0.082005s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 30 [ RunTime:0.086005s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 31 [ RunTime:0.099005s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 32 [ RunTime:0.072004s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 33 [ RunTime:0.064004s ]
+[ sql ] [ SQL ] DELETE FROM `fa_wifi_clock_record`    WHERE  `id` = 34 [ RunTime:0.088005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"del\",\"ids\":\"34,33,32,31,30,29,28,27\",\"params\":\"\"}' , '/index.php/admin/wifi/clock/record/del/ids/34,33,32,31,30,29,28,27' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36' , '192.168.1.108' , 1527155643) [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:54:04+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527155630292
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:54:22+08:00 ] 192.168.1.153 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486582845052 , 114.42286756727 , '\"chuyukeji5.0\"' , 1 , 87 , 1527155662) [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486582845052084\",\"lon\":\"114.42286756727431\",\"wifiname\":\"\\\"chuyukeji5.0\\\"\",\"wifi_distance\":\"1\",\"gps_distance\":\"87\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.153' , 1527155662) [ RunTime:0.067004s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:54:32+08:00 ] 192.168.1.108 GET /index.php/admin/wifi/clock/record/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1527155630293
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-05-24T17:54:54+08:00 ] 192.168.1.108 GET /index.php/admin/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_config` [ RunTime:0.554032s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_config` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001000s ]

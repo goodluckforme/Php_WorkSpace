@@ -46,7 +46,7 @@ class User extends Api
         $ret = $this->auth->login($account, $password);
         if ($ret) {
             $data = ['userinfo' => $this->auth->getUserinfo()];
-            $this->success(__('Logged in successful'), $data);
+            $this->success(__('Logged in successful'), $data,200);
         } else {
             $this->error($this->auth->getError());
         }

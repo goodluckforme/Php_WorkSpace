@@ -85,3 +85,33 @@ Build Successed!
  * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
  */
 
+
+ 在API目录下面  这些接口都已经帮你完成过了  是不是很感动
+ 
+    /**
+     * 检测邮箱验证码
+     * 
+     * @param string $email     邮箱
+     * @param string $captcha   验证码
+     * @param string $event     事件
+     */
+    public function check_ems_correct()
+    {
+        $email = $this->request->request('email');
+        $captcha = $this->request->request('captcha');
+        $event = $this->request->request('event');
+        if (!\app\common\library\Ems::check($email, $captcha, $event))
+        {
+            $this->error(__('验证码不正确'));
+        }
+        $this->success();
+    }
+ 
+ 
+ 自动生成API文档
+ //一键生成API文档
+php think api --force=true
+问题
+Please make sure opcache already enabled, Get help:https://forum.fastadmin.net/d/1321
+解决
+https://www.cnblogs.com/HD/p/4554455.html
