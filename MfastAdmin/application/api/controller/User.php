@@ -46,7 +46,7 @@ class User extends Api
         $ret = $this->auth->login($account, $password);
         if ($ret) {
             $data = ['userinfo' => $this->auth->getUserinfo()];
-            $this->success(__('Logged in successful'), $data,200);
+            $this->success(__('Logged in successful'), $data, 200);
         } else {
             $this->error($this->auth->getError());
         }
@@ -56,7 +56,7 @@ class User extends Api
     {
         $username = $this->request->request('username');
         $clock_place = $this->request->request('clock_place');
-        $this->success('返回成功', ['action' => '打卡成功','username'=>$username,'clock_place'=>$clock_place]);
+        $this->success('返回成功', ['action' => '打卡成功', 'username' => $username, 'clock_place' => $clock_place]);
     }
 
     /**
@@ -68,7 +68,7 @@ class User extends Api
     public function mobilelogin()
     {
         $mobile = $this->request->request('mobile');
-            $captcha = $this->request->request('captcha');
+        $captcha = $this->request->request('captcha');
         if (!$mobile || !$captcha) {
             $this->error(__('Invalid parameters'));
         }
@@ -159,7 +159,8 @@ class User extends Api
         $user->bio = $bio;
         $user->avatar = $avatar;
         $user->save();
-        $this->success();
+//        $this->success("");
+        return json(array("code" => 200, "msg" => "修改成功", "data" => array()));
     }
 
     /**

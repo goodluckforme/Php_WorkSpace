@@ -107,6 +107,8 @@ Build Successed!
         $this->success();
     }
  
+ 在非APi目录下这样写
+ return json(array("result" => 200, "msg" => "打卡成功", "datas" => ["list" => array()]));
  
  自动生成API文档
  //一键生成API文档

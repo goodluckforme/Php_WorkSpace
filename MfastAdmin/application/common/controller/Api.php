@@ -164,7 +164,7 @@ class Api
      * @param string $type  输出类型
      * @param array $header 发送的 Header 信息
      */
-    protected function success($msg = '', $data = null, $code = 1, $type = null, array $header = [])
+    protected function success($msg = '', $data = null, $code = 200, $type = null, array $header = [])
     {
         $this->result($msg, $data, $code, $type, $header);
     }
@@ -177,7 +177,7 @@ class Api
      * @param string $type  输出类型
      * @param array $header 发送的 Header 信息
      */
-    protected function error($msg = '', $data = null, $code = 0, $type = null, array $header = [])
+    protected function error($msg = '', $data = null, $code = 100, $type = null, array $header = [])
     {
         $this->result($msg, $data, $code, $type, $header);
     }
@@ -193,7 +193,7 @@ class Api
      * @return void
      * @throws HttpResponseException
      */
-    protected function result($msg, $data = null, $code = 0, $type = null, array $header = [])
+    protected function result($msg, $data = null, $code = 200, $type = null, array $header = [])
     {
         $result = [
             'code' => $code,
