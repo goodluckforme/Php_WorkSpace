@@ -106,7 +106,7 @@ class User extends Api
     {
         $username = $this->request->request('username');
         $password = $this->request->request('password');
-        $email = $this->request->request('email');
+            $email = $this->request->request('email');
         $mobile = $this->request->request('mobile');
         if (!$username || !$password) {
             $this->error(__('Invalid parameters'));
