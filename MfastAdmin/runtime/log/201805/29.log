@@ -433,3 +433,86 @@
 [ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.001000s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.006000s ]
 [ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586395) [ RunTime:0.430025s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:37:20+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (5 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486682400174 , 114.42288709852 , '\"chuyukeji-YF-5G\"' , 11 , 75 , 1527586640) [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.48668240017361\",\"lon\":\"114.4228870985243\",\"wifiname\":\"\\\"chuyukeji-YF-5G\\\"\",\"wifi_distance\":\"11\",\"gps_distance\":\"75\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586640) [ RunTime:0.051003s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:37:36+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586656) [ RunTime:0.082005s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:38:59+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486752387153 , 114.4232421875 , '\"chuyukeji-YF-5G\"' , 33 , 50 , 1527586739) [ RunTime:0.106006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486752387152777\",\"lon\":\"114.4232421875\",\"wifiname\":\"\\\"chuyukeji-YF-5G\\\"\",\"wifi_distance\":\"33\",\"gps_distance\":\"50\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586739) [ RunTime:0.068003s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:39:04+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586744) [ RunTime:0.105006s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:39:09+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (3 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486751573351 , 114.4232438151 , '\"chuyukeji-YF-5G\"' , 33 , 50 , 1527586749) [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"3\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486751573350695\",\"lon\":\"114.42324381510417\",\"wifiname\":\"\\\"chuyukeji-YF-5G\\\"\",\"wifi_distance\":\"33\",\"gps_distance\":\"50\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586749) [ RunTime:0.051002s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:39:11+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586751) [ RunTime:0.048003s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:39:14+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586754) [ RunTime:0.064003s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:39:33+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (5 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486751302083 , 114.42322184245 , '\"chuyukeji-YF-5G\"' , 46 , 51 , 1527586773) [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486751302083334\",\"lon\":\"114.42322184244792\",\"wifiname\":\"\\\"chuyukeji-YF-5G\\\"\",\"wifi_distance\":\"46\",\"gps_distance\":\"51\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586773) [ RunTime:0.038002s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:39:36+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586776) [ RunTime:0.087005s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:40:11+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.059004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_wifi_clock_record` (`admin_id` , `clock_place` , `lat` , `lon` , `wifiname` , `wifi_distance` , `gps_distance` , `createtime`) VALUES (5 , '湖北省武汉市洪山区凌家山北路29号靠近鼎业楼A座' , 30.486748860677 , 114.423203125 , '\"chuyukeji-YF-5G\"' , 111 , 52 , 1527586811) [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\",\"clock_place\":\"\\u6e56\\u5317\\u7701\\u6b66\\u6c49\\u5e02\\u6d2a\\u5c71\\u533a\\u51cc\\u5bb6\\u5c71\\u5317\\u8def29\\u53f7\\u9760\\u8fd1\\u9f0e\\u4e1a\\u697cA\\u5ea7\",\"lat\":\"30.486748860677082\",\"lon\":\"114.423203125\",\"wifiname\":\"\\\"chuyukeji-YF-5G\\\"\",\"wifi_distance\":\"111\",\"gps_distance\":\"52\"}' , '/index.php/admin/wifi/clock/record/add' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586811) [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-05-29T17:40:17+08:00 ] 192.168.1.133 POST /index.php/admin/wifi/clock/record/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wifi_clock_record` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wifi_clock_record` WHERE  `admin_id` IN (5) ORDER BY `id` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"admin_id\":\"5\"}' , '/index.php/admin/wifi/clock/record/index' , 0 , 'Unknown' , 'okhttp/3.3.0' , '192.168.1.133' , 1527586817) [ RunTime:0.085005s ]

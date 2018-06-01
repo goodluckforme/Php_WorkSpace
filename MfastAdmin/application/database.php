@@ -13,18 +13,32 @@
 use think\Env;
 
 return [
+//    // 数据库类型
+//    'type'            => Env::get('database.type', 'mysql'),
+//    // 服务器地址
+//    'hostname'        => Env::get('database.hostname', '127.0.0.1'),
+//    // 数据库名
+//    'database'        => Env::get('database.database', 'fastadmin'),
+//    // 用户名
+//    'username'        => Env::get('database.username', 'root'),
+//    // 密码
+//    'password'        => Env::get('database.password', 'much'),
+//    // 端口
+//    'hostport'        => Env::get('database.hostport', ''),
+//=========================================本地=================================================
     // 数据库类型
     'type'            => Env::get('database.type', 'mysql'),
     // 服务器地址
-    'hostname'        => Env::get('database.hostname', '127.0.0.1'),
+    'hostname'        => Env::get('database.hostname', 'qdm170694373.my3w.com'),
     // 数据库名
-    'database'        => Env::get('database.database', 'fastadmin'),
+    'database'        => Env::get('database.database', 'qdm170694373_db'),
     // 用户名
-    'username'        => Env::get('database.username', 'root'),
+    'username'        => Env::get('database.username', 'qdm170694373'),
     // 密码
-    'password'        => Env::get('database.password', 'much'),
+    'password'        => Env::get('database.password', 'bzj58ntpNyb8'),
     // 端口
     'hostport'        => Env::get('database.hostport', ''),
+//=========================================万网=================================================
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数

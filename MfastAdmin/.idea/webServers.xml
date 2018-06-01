@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d200d434-2cae-4410-9f2e-1bafd311e32f" name="much" url="http://xiaomakj.cn/wificlock/">
+        <fileTransfer host="121.42.101.37" port="21" rootFolder="/htdocs/wificlock">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

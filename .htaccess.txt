@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?wifi.xiaomakj.cn$
+RewriteCond %{REQUEST_URI} !^/wificlock/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /wificlock/public/$1
+RewriteCond %{HTTP_HOST} ^(www.)?wifi.xiaomakj.cn$
+RewriteRule ^(/)?$ wificlock/public/index.php/admin/index/login/[L]
